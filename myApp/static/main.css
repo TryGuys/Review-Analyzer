@@ -1,7 +1,13 @@
-#input_form{
-margin-top:40vh;
-padding:17px;
+#input_form {
+    margin-top: 40vh;
+    padding: 17px;
 }
-#button_form{
-margin-left: 45%;
+
+#button_form {
+    margin-left: 45%;
+}
+
+footer {
+    color: #e2491d;
+    margin-top: 100%;
 }
