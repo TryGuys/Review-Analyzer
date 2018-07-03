@@ -1,19 +1,12 @@
 {% extends 'layout.html' %} {% block body %}
 <div class="container">
-    <div class="jumbotron">
-        <div>{{text}}</div>
         <form class="form-horizontal" action="" method="POST">
             <div class="form-group">
-                <label class="control-label" for="email">Email address:</label>
-                <input class="form-control" type="email " name="email_name" placeholder="Enter your E-mail address " required>
-
-                <label class="control-label" for="num">Review:</label>
-                <input class="form-control" type="text" min="3" max="60" name="user_review" placeholder="Your Feedback" required>
+                <input id="input_form" class="form-control" type="text" min="3" max="60" name="user_review" placeholder="Your Feedback" required>
                 <br>
-                <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                <button id="button_form" type="submit" class="btn btn-success btn-lg">Submit</button>
             </div>
-            <footer class="text-justify">&copy;2018 TryGuys</footer>
+            <footer id="footer_note"class="text-justify">&copy;2018 TryGuys</footer>
         </form>
-    </div>
 </div>
 {% endblock %}
