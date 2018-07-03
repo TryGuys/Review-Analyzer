@@ -1,5 +1,9 @@
+body{
+    background:linear-gradient(to right bottom, rgba(30, 236, 109,0.6),white)
+}
+
 #input_form {
-    margin-top: 40vh;
+    margin-top: 20vh;
     padding: 17px;
 }
 
@@ -11,3 +15,10 @@ footer {
     color: #e2491d;
     margin-top: 100%;
 }
+@media only screen and (max-width: 600px) {
+    #button_form{
+        margin-left: 40%;
+        background: #e2491d;
+        border-color: #fa3d08;
+
+    }
