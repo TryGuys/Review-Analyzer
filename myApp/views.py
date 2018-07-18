@@ -11,10 +11,10 @@ def index(request):
     if data_form.is_valid():
         Review=data_form.cleaned_data['Review']
         data=Review
-        file = open(os.path.join(pickle_path,"model.pickle"),'rb')
+        file = open(os.path.join(pickle_path,"pickles","model.pickle"),'rb')
         nb = pickle.load(file)
         file.close()
-        file = open(os.path.join(pickle_path,"vectorizer.pickle"),'rb')
+        file = open(os.path.join(pickle_path,"pickles","vectorizer.pickle"),'rb')
         tv = pickle.load(file)
         file.close()
         test=np.array([Review])
